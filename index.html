@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AR Marker Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icon.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="styles/ar-marker.css">
+</head>
+<body>
+    <div id="main">
+        <h1>AR Marker Test</h1>
+        <ul id="selectionlist">
+            <li><a href="?show=camera"><i class="fas fa-2x fa-video"></i>switch to AR mode</a></li>
+            <li><a href="images/marker_hiro.jpg"><i class="far fa-2x fa-image"></i>show Hiro Marker</a></li>
+            <li><a href="images/marker_dele.png"><i class="far fa-2x fa-image"></i>show dele Marker</a></li>
+            <li><a href="images/marker_dele_qr.png"><i class="far fa-2x fa-image"></i>show dele QR Marker</a></li>
+        </ul>
+        <h2>Information</h2>
+        <p>
+            Javascript based Augmented Reality with Marker detection. <strong>This won't work with iOS Devices</strong>.
+            Thanks to <a href="https://github.com/u4bi-dev/simple-ar.js" target="_blank">u4bi</a>,
+            <a href="https://github.com/jeromeetienne/AR.js" target="_blank">AR.js</a> and
+            <a href="https://threejs.org/" target="_blank">Three.JS</a>.
+        </p>
+    </div>
+    <div id="camera">
+        <!-- camera and augmented objects will be rendered here via ar-marker.js -->
+    </div>
+    <script src="vendor/three/r97/three.min.js"></script>
+    <script src="vendor/ar/1.6.2/ar.min.js"></script>
+    <script src="script/ar-marker.js"></script>
+</body>
+</html>
